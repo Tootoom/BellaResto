@@ -392,25 +392,12 @@ body{
 
 
 
-  <article class="col">
-                <div class="article">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../Images/pizza.png" class="img-fluid" alt="image">
-                                <div class="info_content">
-                                    <p>Pizza 4 Fromages</p>
-                                    <p>12 $</p>
-                                </div>
 
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Pizza 4 Fromages</h1>
-                                <p>Cuite au feu de bois</p>
-                                <p>Base tomate, chèvre, mozzarella ou emmental, roquefort, olives, origan.</p>
-                            </div>
-                        </div>
-                    </div> <br>
-                    <button><a href="form.html"> Buy </a></button>
-                </div>
-            </article>
+
+
+  .b-gallery__list-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}

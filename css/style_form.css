@@ -97,7 +97,6 @@ header{
 }
 legend{
     margin-bottom: 6%;
-
 }
 
 form {
@@ -113,6 +112,7 @@ fieldset legend {
     font-family: 'Poppins', sans-serif;
     font-size: 44px;
     font-weight: 600;
+    float: none;
 }
 
 .order fieldset legend {
@@ -301,6 +301,10 @@ input[type=checkbox]:checked{
     width: 200px;
 }
 
+legend .delivery{
+
+    float: none;
+}
 .delivery {
     display: flex;
     justify-content: space-between;
