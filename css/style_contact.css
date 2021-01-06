@@ -198,7 +198,88 @@ fieldset legend {
     font-size: 24px;
 }
 
-
+/*media*/
+ 
+@media all and (max-width: 845px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .copyright{
+        font-size: x-small;
+    }
+}
+ 
+@media all and (max-width: 1280px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .copyright{
+        font-size: x-small;
+    }
+ 
+    .navbar-nav a:after{
+        display: none;
+    }
+ 
+    #home::after{
+        display: none;
+    }
+}
+ 
+@media (min-width:2560 px){
+ 
+    .text-head1{   
+        font-size: x-large;
+    }
+    
+    .text-head2{
+        font-size: xx-large;
+    }
+ 
+    .text-foot1{
+        font-size: xx-large;
+    }
+ 
+    .copyright{
+        font-size: large
+    }
+}
 
 :root {
     --secondary-color: #e46e00;
