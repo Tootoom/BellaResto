@@ -5,59 +5,95 @@
 body {
     margin: 0;
 }
-header {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1.5fr;
-    height: 156px;
+/*header*/
+ 
+header{
+    margin-bottom: 10%;
+}
+ 
+.navbar{
+    border-bottom: 2px solid #FA4A0C;
+}
+ 
+.navbar-nav a{
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+.navbar-nav a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;   
+}
+ 
+.navbar-nav a:hover::after{
+    width: 100%;
+    background: #FA4A0C;    
+}
+ 
+#logo1{
+    margin: 25px 0 25px 0;
+}
+ 
+#navbarNavAltMarkup{
+    margin: 0 55px 0 0;
+}
+ 
+#home{
+    color: white;
+    background-color: #FA4A0C;
+    border-radius: 3px;
+}
+ 
+#home::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;
+}
+ 
+#home:hover::after{
+    width: 100%;
+    background: white;
+}
+ 
+#cover{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+ 
+.text-head1{ 
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: aliceblue;
+}
+ 
+.text-head2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+ 
+.card-img-overlay{
+    background-color: rgba(29, 29, 29, 0.5);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-header img {
-    grid-column: 2 / 3;
-}
-
-nav {
-    grid-column: 4 / 5;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
-
-nav a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color:black;
-    font-weight: 600;
-}
-
-nav a:first-child {
-    color: chocolate;
-}
-
-.banner_title {
-    height: 619px;
-    background-image: url(../Images/banner.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: white;
-    display: grid;
-    grid-template-rows: 100px 150px;
-    justify-items: center;
-
-}
-
-.banner_title p:first-child {
-    font-size: 28px;
-    align-self: flex-end;
-    margin: 0;
-}
-
-.banner_title p:nth-child(2) {
-    font-size: 58px;
-    margin: 0;
-    text-align: center;
+ 
+#titre-bann{
+    margin-top: 2%;
+    padding: 2%;
 }
 
 form {
@@ -161,6 +197,8 @@ fieldset legend {
     height: 60px;
     font-size: 24px;
 }
+
+
 
 :root {
     --secondary-color: #e46e00;

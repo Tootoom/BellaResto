@@ -4,25 +4,56 @@
 <head>
     <title> Restaurant Bella Olonje</title>
     <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/style_contact.css' type='text/css'>
-    <link rel='stylesheet' href='bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css' </head>
+    <link rel='stylesheet' href='../css/style_contact.css' type='text/css'>
+    <link rel='stylesheet' href='../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css'>
+</head>
 
 <body>
     <header>
-        <img src="Images/BellaOlonje_logo.png" alt="image">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#pizza">Pizza</a>
-            <a href="index.html#burgers">Burgers</a>
-            <a href="index.html#salade">Salades</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="banner_title">
-        <p>Food App</p>
-        <p>Chez Bella <br> chaque désir s'additionne.</p>
-    </div>
-
+        <div>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-0">
+                <div class="container-fluid">
+ 
+                    <div id="logo1">
+                        <img src="../Images/BellaOlonje_logo.png" class="img-fluid" />
+                    </div>
+ 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+ 
+                    <div class=" text-center collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="../html/index.html"
+                                id="home">Home</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="../html/index.html#pizza"
+                                style="color:#FA4A0C">Pizza</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="../html/index.html#burgers"
+                                style="color:#FA4A0C">burgers</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="../html/index.html#salades"
+                                style="color:#FA4A0C">salades</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Contact.html"
+                                style="color:#FA4A0C">Contact</a>
+                        </div>
+                    </div>
+ 
+                </div>
+            </nav>
+ 
+            <div class="card p-0 m-0" style="border: none">
+                <img src="../Images/banner.png" class="img-fluid" id="cover" alt="cover"
+                    style="border: none; align-self: center">
+                <div class="card-img-overlay p-0">
+                    <div id="titre-bann">
+                        <p class="text-center text-head1">Food app</p>
+                        <p class="text-center mt-4 text-head2">Chez Bella<br>Chaque désir s'additionne.</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
     <main>
         <form name="contact" action="" method="POST">
             <fieldset>
@@ -92,6 +123,7 @@
     </main>
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
